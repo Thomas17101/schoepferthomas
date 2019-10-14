@@ -1,0 +1,485 @@
+body {
+    font-family: 'Roboto';
+}
+
+#wrap {
+    font-size: 21px;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    color: #1A417D;
+    transition: 0.4s;
+    position: fixed;
+    margin-top: 15px;
+    z-index: 10;
+}
+
+#wrap:not(:target) {
+    transform: translate3d(-335px, 0, 0);
+}
+
+#wrap:target {
+    transform: translate3d(0, 0, 0);
+}
+
+#open,
+#close {
+    height: 10px;
+    text-align: right;
+    display: block;
+    margin-right: -30px;
+}
+
+#wrap:target #open,
+#wrap:not(:target) #close {
+    display: none;
+}
+
+#wrap:target #open {
+    display: none;
+}
+
+.nav a {
+    color: #1A417D;
+    text-decoration: none;
+    display: block;
+}
+
+.header {
+    background: transparent;
+    width: 360px;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nav {
+    padding: 15px;
+}
+
+.main {
+    padding: 25px;
+    flex: 1;
+    display: inline-block;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: grey;
+}
+
+
+/* HEADER */
+
+header {
+    background-image: url(traction.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 0px;
+    border-radius: 40px;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 150px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 0px;
+}
+
+header h1 strong {
+    font-weight: lighter;
+    color: #1A417D;
+}
+
+header p {
+    text-transform: uppercase;
+    color: #A9A9A9;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+/* BODY */
+
+h2 {
+    font-size: 60px;
+    color: black;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-top: 80px;
+}
+
+h2 strong {
+    color: #1A417D;
+}
+
+h2 {
+    margin-left: 0px;
+    text-align: center;
+}
+
+
+/* SECTION 1 ABOUT ME */
+
+#aproposdemoi {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #A9A9A9;
+    border: double #1A417D 8px;
+    border-radius: 80px;
+    position: relative;
+}
+
+#aproposdemoi img {
+    width: 60%;
+    margin-right: 0px;
+    display: flex;
+}
+
+#aproposdemoi h2 {
+    margin-left: 200px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.yooo1 {
+    font-size: 18pt;
+    background-color: #1A417D;
+    margin-right: 25%;
+    text-align: center;
+    border-radius: 10px;
+    border: double 4px black;
+    max-width: 25%;
+    margin-bottom: 200px;
+    margin-left: 15%;
+    color: #A9A9A9;
+    padding: 10px;
+}
+
+#plus {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+}
+
+#cv img {
+    width: 60px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+
+#cv img:hover {
+    transform: scale(1.5)
+}
+
+
+/* SECTION 2 ETUDES */
+
+#etudes {
+    min-height: 100vh;
+    margin-top: 0px;
+    border: double #1A417D 8px;
+    border-radius: 80px;
+    background-color: aliceblue;
+}
+
+
+/* SECTION 3 REALISATIONS */
+
+#realisations {
+    min-height: 100vh;
+
+    background-color: #A9A9A9;
+    border: double #1A417D 8px;
+    border-radius: 80px;
+}
+
+#ttes {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.sa{
+  
+    
+    justify-content: center;
+    margin: auto;
+}
+.taille{
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    justify-content: center;
+    justify-content: space-evenly;
+   margin-left: 25%;
+    
+}
+.taille:hover{
+    transform: scale(1.5);
+}
+#realisations div {
+    display: flex;
+}
+
+.vdoentre {
+    width: 200px;
+    margin-top: 100px;
+    color: black;
+    font-size: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#realisations span {
+    color: #1A417D;
+}
+.pcenter{
+    color: black;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+h3{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 30pt;
+
+}
+h3 strong{
+    color:#1A417D;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer #fond {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+footer #contact #place {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer #contact #mail {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer #contact #phone {
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer #contact div {
+    display: flex;
+    height: 40px;
+}
+
+footer #credit {
+    font-size: 14px;
+    color: #BABABA;
+}
+
+footer #info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+}
+
+
+/* Presentation */
+
+.mes_ci {
+    position: relative;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.mes_ci div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mes_ci>div:first-child {
+    margin-bottom: 15vw;
+}
+
+.mes_ci div div img {
+    width: 10vw;
+}
+
+.mes_ci div div {
+    background-image: linear-gradient(white, white 100%);
+    border-radius: 500px;
+    border: 1vw solid white;
+    margin-bottom: 55px;
+    height: 10vw;
+    width: 10vw;
+}
+
+.ci_nom {
+    display: none;
+    position: absolute;
+    top: 35%;
+    font-size: 7vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+}
+
+#la1 {
+    width: 25%;
+}
+
+
+/* Affichage des textes */
+
+.mes_ci div:hover>.ci_nom {
+    display: block;
+    right: 15%;
+    left: 15%;
+}
+
+
+/* ANIMATION */
+
+
+/* -- CrÃ©dits -- Les animations suivantes ont Ã©tÃ© crÃ©Ã©es Ã  l'aide du gÃ©nÃ©rateur animasta.com */
+
+
+/* Rotation des pictogrammes */
+
+.rotate-center:hover {
+    animation: rotate-center .6s ease-in-out both
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+/* ArrivÃ©e du texte */
+
+.fade-in-fwd {
+    animation: fade-in-fwd 1s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
+@keyframes fade-in-fwd {
+    0% {
+        transform: translateY(-50%) translateZ(-80px);
+        opacity: 0
+    }
+    100% {
+        transform: translateY(-50%) translateZ(0);
+        opacity: 1
+    }
+}
+
+.swing-in-top-fwd {
+    animation: swing-in-top-fwd .8s cubic-bezier(.175, .885, .32, 1.275) both
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0
+    }
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1
+    }
+}
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
